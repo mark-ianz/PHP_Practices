@@ -1,0 +1,15 @@
+.register-form {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  width: 300px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-button {
+  width: 100px;
+}

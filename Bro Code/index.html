@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="number" class="count-input" placeholder="Number you want to count to">
+  <button class="button" onclick="count ()">
+    Count now!
+  </button>
+  <div class="counts">
+
+  </div>
+  <script>
+    const BUTTON_ELEMENT = document.querySelector ('.button');
+    const COUNT_INPUT = document.querySelector ('.count-input');
+    const COUNT_CONTAINER = document.querySelector ('.counts');
+
+    function count () {
+      countTo = COUNT_INPUT.value;
+      COUNT_CONTAINER.innerHTML = '';
+      for (let i = 1; i <= countTo; i++) {
+        COUNT_CONTAINER.innerHTML += `<p>${i}</p>`;
+      }
+    }
+
+  </script>
+</body>
+</html>
